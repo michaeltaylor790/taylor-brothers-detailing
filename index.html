@@ -103,7 +103,7 @@ footer{background:#0b0b0b;color:#d1d5db;padding:40px 0}footer a{color:#ffc9c9}
       <div class="card">
         <h2>Book now</h2>
         <p>Tell us your vehicle, size, and preferred date—we’ll confirm fast.</p>
-        <form action="#" onsubmit="alert('Thanks! We will contact you shortly.'); return false;">
+        <form name="booking" method="POST" action="https://formspree.io/f/mkgkwrar">
           <div class="grid" style="grid-template-columns:1fr 1fr">
             <input placeholder="Name" required>
             <input placeholder="Phone" required>
@@ -132,4 +132,4 @@ footer{background:#0b0b0b;color:#d1d5db;padding:40px 0}footer a{color:#ffc9c9}
 <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
-<form name="booking" method="POST" action="https://formspree.io/f/mkgkwrar">
+
