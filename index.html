@@ -103,23 +103,26 @@ footer{background:#0b0b0b;color:#d1d5db;padding:40px 0}footer a{color:#ffc9c9}
       <div class="card">
         <h2>Book now</h2>
         <p>Tell us your vehicle, size, and preferred date—we’ll confirm fast.</p>
-        <form name="booking" method="POST" action="https://formspree.io/f/mkgkwrar">
-          <div class="grid" style="grid-template-columns:1fr 1fr">
-            <input placeholder="Name" required>
-            <input placeholder="Phone" required>
-            <input type="email" placeholder="Email">
-            <input type="date" placeholder="Preferred date">
-          </div>
-          <select style="margin-top:8px">
-            <option>Express Exterior ($65 and up)</option>
-            <option>Interior Refresh ($65 and up)</option>
-            <option>Full Detail ($135 and up)</option>
-            <option>Ceramic Coating ($500 and up)</option>
-          </select>
-          <textarea rows="4" placeholder="Vehicle & notes (pet hair, stains, etc.)" style="width:100%;margin-top:8px"></textarea>
-          <p><button class="btn" type="submit">Submit request</button></p>
-          <p class="small">We’ll never share your info. By submitting you agree to be contacted by phone or email.</p>
-        </form>
+<form name="booking" method="POST" action="https://formspree.io/f/mkgkwrar">
+  <input type="hidden" name="form-name" value="booking">
+  <div class="grid" style="grid-template-columns:1fr 1fr">
+    <input name="name" placeholder="Name" required>
+    <input name="phone" placeholder="Phone" required>
+    <input type="email" name="email" placeholder="Email">
+    <input type="date" name="date" placeholder="Preferred date">
+  </div>
+  <select name="service" style="margin-top:8px">
+    <option>Express Exterior ($79 and up)</option>
+    <option>Interior Refresh ($99 and up)</option>
+    <option>Full Detail ($135 and up)</option>
+    <option>Ceramic Coating ($500 and up)</option>
+  </select>
+  <textarea name="message" rows="4" placeholder="Vehicle & notes (pet hair, stains, etc.)" style="width:100%;margin-top:8px"></textarea>
+  <p><button class="btn" type="submit">Submit request</button></p>
+  <p class="small">We’ll never share your info. By submitting, you agree to be contacted by phone or email.</p>
+</form>
+
+    
       </div>
     </div>
   </section>
