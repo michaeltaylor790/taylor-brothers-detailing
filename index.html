@@ -12,7 +12,18 @@
 nav{position:sticky;top:0;background:rgba(255,255,255,.85);backdrop-filter:blur(8px);border-bottom:1px solid #e5e7eb;z-index:10}
 nav .wrap{display:flex;gap:12px;align-items:center}
 nav a{padding:14px 10px;text-decoration:none;color:var(--text);font-weight:700}
-nav a:hover{color:var(--brand)} .spacer{flex:1}
+nav a:hover{color:var(--brand)} .spacer{flex:1}<nav>
+  <div class="container wrap">
+    <strong>Taylor Brothers Detailing</strong>
+    <div class="spacer"></div>
+    <a href="#services">Services</a>
+    <a href="gallery.html">Gallery</a>  <!-- 👈 added -->
+    <a href="#ceramic">Ceramic</a>
+    <a href="#contact">Contact</a>
+    <a class="btn" href="#contact">Book now</a>
+  </div>
+</nav>
+
 .btn{display:inline-block;background:var(--brand);color:#fff;border:2px solid var(--brand);padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:800}
 .btn.outline{background:transparent;color:var(--brand)}
 header{padding:70px 0 36px;background:radial-gradient(1200px 420px at 50% -240px, rgba(208,0,0,.18), transparent)}
