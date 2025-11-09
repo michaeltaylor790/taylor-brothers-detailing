@@ -14,10 +14,9 @@ nav .wrap{display:flex;gap:12px;align-items:center} nav a{padding:14px 10px;text
 nav a:hover{color:var(--brand)} .spacer{flex:1}
 h1{font-size:clamp(28px,4vw,42px);margin:18px 0}
 .section{padding:28px 0}
-.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
-.card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:16px}
-.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.gallery-grid img{width:100%;height:220px;object-fit:cover;border-radius:10px;box-shadow:var(--shadow)}
+.gallery-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.gallery-grid img{width:100%;height:260px;object-fit:cover;border-radius:10px;box-shadow:var(--shadow);transition:transform .2s ease, box-shadow .2s ease}
+.gallery-grid img:hover{transform:scale(1.04);box-shadow:0 8px 26px rgba(0,0,0,.15)}
 footer{background:#0b0b0b;color:#d1d5db;padding:32px 0;margin-top:28px} footer a{color:#ffc9c9}
 .badge{background:#ffe5e5;color:var(--brand);border-radius:999px;padding:6px 10px;font-weight:800;font-size:12px}
 </style>
@@ -39,21 +38,19 @@ footer{background:#0b0b0b;color:#d1d5db;padding:32px 0;margin-top:28px} footer a
   <div class="container">
     <span class="badge">Recent Work</span>
     <h1>Gallery</h1>
-    <p class="section-sub" style="color:var(--muted)">Add photos here any time — just upload to <code>assets/gallery/</code> and add a new line below.</p>
+    <p class="section-sub" style="color:var(--muted)">Check out a few vehicles we’ve brought back to showroom shine.</p>
   </div>
 </header>
 
 <section class="section">
   <div class="container">
     <div class="gallery-grid">
-      <!-- ✅ Add one photo per line. Replace filenames with yours. -->
       <img src="assets/gallery/corvette.jpg" alt="Corvette — ceramic coating">
       <img src="assets/gallery/ram.jpg" alt="Ram truck — exterior detail">
-      <img src="assets/gallery/explorer.jpg" alt="Ford Explorer — exterior detail">
-!-- Add more as you upload:
       <img src="assets/gallery/boat.jpg" alt="Boat detailing">
-      <img src="assets/gallery/suv.jpg" alt="SUV interior refresh">
-      -->
+      <img src="assets/gallery/suv.jpg" alt="SUV — interior refresh">
+      <img src="assets/gallery/before.jpg" alt="Before detail">
+      <img src="assets/gallery/after.jpg" alt="After detail">
     </div>
   </div>
 </section>
